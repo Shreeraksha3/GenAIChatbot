@@ -61,7 +61,48 @@ cd genai-chatbot
 2️⃣ Install Dependencies
 ```bash
 pip install langchain langchain-community openai gradio huggingface_hub
+```
+3️⃣ Get Your OpenAI API Key
+1.Go to OpenAI API Keys
+2.Create a New Secret Key
+3.Copy it and set it in your environment:
 
-<p align="center"> Built with ❤️ using Python, LangChain, and OpenAI API </p>
+```bash
+import os
+os.environ["OPENAI_API_KEY"] = "your_api_key_here"
+```
+4️⃣ Run Locally
+```bash
+python app.py
+
+```
+Open http://127.0.0.1:5000/ or the Gradio link.
+
+🌍 Deployment on Hugging Face
+1. Login to Hugging Face
+```bash
+from huggingface_hub import notebook_login
+```
+2. Upload Files
+```bash
+from huggingface_hub import HfApi
+api = HfApi()
+api.upload_file(path_or_fileobj="./requirements.txt", path_in_repo="requirements.txt", repo_id="YourRepo", repo_type="space")
+api.upload_file(path_or_fileobj="./app.py", path_in_repo="app.py", repo_id="YourRepo", repo_type="space")
+```
+3. Add Secrets in your Hugging Face Space Settings
+  i.Go to Variables and secrets
+  ii.Add OPENAI_API_KEY
+
+##🔮 Future Enhancements
+🎤 Voice-enabled conversations
+🌍 Multi-language support
+🗄 Persistent conversation storage
+📊 Usage analytics
+
+<p align="center"> Built with ❤️ using Python, LangChain, and OpenAI API </p> ```
+
+
+
 
 
