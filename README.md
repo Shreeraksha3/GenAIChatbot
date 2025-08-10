@@ -57,9 +57,11 @@ It is capable of:
 ```bash
 git clone https://github.com/yourusername/genai-chatbot.git
 cd genai-chatbot
-
+```
 2️⃣ Install Dependencies
+```bash
 pip install langchain langchain-community openai gradio huggingface_hub
 
 <p align="center"> Built with ❤️ using Python, LangChain, and OpenAI API </p>
+
 
