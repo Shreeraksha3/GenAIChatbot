@@ -58,11 +58,11 @@ It is capable of:
 git clone https://github.com/yourusername/genai-chatbot.git
 cd genai-chatbot
 ```
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 ```bash
 pip install langchain langchain-community openai gradio huggingface_hub
 ```
-3️⃣ Get Your OpenAI API Key
+### 3️⃣ Get Your OpenAI API Key
 1.Go to OpenAI API Keys
 2.Create a New Secret Key
 3.Copy it and set it in your environment:
@@ -71,7 +71,7 @@ pip install langchain langchain-community openai gradio huggingface_hub
 import os
 os.environ["OPENAI_API_KEY"] = "your_api_key_here"
 ```
-4️⃣ Run Locally
+### 4️⃣ Run Locally
 ```bash
 python app.py
 
@@ -100,7 +100,8 @@ api.upload_file(path_or_fileobj="./app.py", path_in_repo="app.py", repo_id="Your
 🗄 Persistent conversation storage
 📊 Usage analytics
 
-<p align="center"> Built with ❤️ using Python, LangChain, and OpenAI API </p> ```
+<p align="center"> Built with ❤️ using Python, LangChain, and OpenAI API </p> 
+
 
 
 
