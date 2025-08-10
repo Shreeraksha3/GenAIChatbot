@@ -91,8 +91,8 @@ api.upload_file(path_or_fileobj="./requirements.txt", path_in_repo="requirements
 api.upload_file(path_or_fileobj="./app.py", path_in_repo="app.py", repo_id="YourRepo", repo_type="space")
 ```
 3. Add Secrets in your Hugging Face Space Settings
-  i.Go to Variables and secrets
-  ii.Add OPENAI_API_KEY
+- Go to Variables and secrets
+- Add OPENAI_API_KEY
 
 ### 🔮 Future Enhancements
 - 🎤 Voice-enabled conversations
@@ -101,6 +101,7 @@ api.upload_file(path_or_fileobj="./app.py", path_in_repo="app.py", repo_id="Your
 - 📊 Usage analytics
 
 <p align="center"> Built with ❤️ using Python, LangChain, and OpenAI API </p> 
+
 
 
 
